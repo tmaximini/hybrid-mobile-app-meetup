@@ -1,0 +1,10 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Effective Ionic workflow with gulp.js",
+    "packageVersion": "1.0.0",
+    "useSass": true,
+    "deployToGithubPages": true,
+    "githubUsername": "tmaximini",
+    "githubRepository": "hybrid-mobile-app-meetup"
+  }
+}
