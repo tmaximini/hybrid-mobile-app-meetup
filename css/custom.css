@@ -1,0 +1,10 @@
+.reveal section img {
+    border: 0 !important;
+    background: none;
+    box-shadow: none;
+    max-width: 40%;
+}
+
+.reveal pre {
+    box-shadow: none;
+}
