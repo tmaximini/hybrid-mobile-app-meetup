@@ -11,6 +11,7 @@
     "grunt-example.html",
     "gulp.html",
     "gulp-101.html",
+    "glob.html",
     "gulp-101-2.html",
     "gulp-example-1.html",
     "gulp-example-styles.html",
@@ -21,4 +22,5 @@
     "yeoman.html",
     "demo-time.html",
     "thanks.html"
+
 ]
