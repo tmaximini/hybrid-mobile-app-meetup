@@ -6,23 +6,24 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     concat: {
-        options: {
-          separator: ';'
-        },
-        dist: {
-          src: ['scripts/*.js'],
-          dest: '<%= distFolder %>/main.js'
-        },
-        deploy: {
-          src:['deploy/*.js'],
-          dest:'deploy.js'
-        }
-    }});
+      options: {
+        separator: ';'
+      },
+      dist: {
+        src: ['scripts/*.js'],
+        dest: '<%= distFolder %>/main.js'
+      },
+      deploy: {
+        src:['deploy/*.js'],
+        dest:'deploy.js'
+      }
+  }});
+
+
+  grunt.loadNpmTasks('grunt-contrib-concat');
+
+  grunt.registerTask('build', ['concat']);
 };
-
-grunt.loadNpmTasks('grunt-contrib-concat');
-
-grunt.registerTask('build', ['concat']);
 
     </code>
 </pre>

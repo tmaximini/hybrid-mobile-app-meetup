@@ -32,3 +32,16 @@ table.summary tbody td {
     font-size: 1.5rem;
 }
 
+.centered {
+    text-align: center;
+}
+
+.centered pre {
+    width: auto !important;
+}
+
+ul.no-bullets {
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+}
