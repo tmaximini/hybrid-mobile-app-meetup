@@ -18,5 +18,7 @@
     "bower-users.html",
     "workflow-summary.html",
     "app-structure.html",
-    "yeoman.html"
+    "yeoman.html",
+    "demo-time.html",
+    "thanks.html"
 ]
