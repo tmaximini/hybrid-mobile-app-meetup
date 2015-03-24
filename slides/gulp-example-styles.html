@@ -1,0 +1,22 @@
+<h2>Gulp Example: Styles</h2>
+
+<pre><code class="javascript">
+// precompile .scss and concat with ionic.css
+gulp.task('styles', function() {
+
+  var options = build ? { style: 'compressed' } : { style: 'expanded' };
+
+  var sassStream = plugins.rubySass('app/styles/main.scss', options)
+      .pipe(plugins.autoprefixer('last 2 version'));
+
+  var cssStream = gulp
+    .src('bower_components/ionic/css/ionic.min.css');
+
+  return streamqueue({ objectMode: true }, cssStream, sassStream)
+    .pipe(plugins.concat('main.css'))
+    .pipe(plugins.if(build, plugins.stripCssComments()))
+    .pipe(plugins.if(build && !emulate, plugins.rev()))
+    .pipe(gulp.dest(path.join(targetDir, 'styles')))
+    .on('error', errorHandler);
+});
+</code></pre>

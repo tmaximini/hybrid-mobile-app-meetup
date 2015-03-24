@@ -1,0 +1,28 @@
+<h2>Gulp 101</h2>
+
+<pre>
+    <code class="javascript">
+        // gulpfile.js
+        var gulp = require('gulp');
+
+        // lots of plugins
+        var concat = require('gulp-concat');
+        var uglify = require('gulp-uglify');
+        //...
+
+        // or load all 'gulp-*' packages into plugins object
+        var plugins = require('gulp-load-plugins')();
+
+        // any npm package
+        var path = require('path');
+
+        // define tasks
+        // example: copy images
+        gulp.task('images', function() {
+          return gulp.src('app/images/**/*.*')
+            .pipe(gulp.dest(path.join('dist', 'images')))
+        });
+
+        // ... call this task via 'gulp images'
+    </code>
+</pre>

@@ -2,9 +2,32 @@
     border: 0 !important;
     background: none;
     box-shadow: none;
-    max-width: 40%;
 }
 
 .reveal pre {
     box-shadow: none;
+}
+
+li pre {
+    width: 100% !important;
+}
+
+table.summary {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border-collapse: collapse;
+    width: 100% !important;
+}
+
+table.summary td {
+    border: 1px solid !important;
+    padding: 10px !important;
+}
+
+table.summary tbody td {
+    font-size: 1.5rem;
+}
+
+.fragment.small {
+    font-size: 1.5rem;
 }

@@ -9,5 +9,14 @@
     "automation.html",
     "grunt.html",
     "grunt-example.html",
-    "gulp.html"
+    "gulp.html",
+    "gulp-101.html",
+    "gulp-101-2.html",
+    "gulp-example-1.html",
+    "gulp-example-styles.html",
+    "current-gulp-setup-for-ionic.html",
+    "bower-users.html",
+    "workflow-summary.html",
+    "app-structure.html",
+    "yeoman.html"
 ]
