@@ -8,7 +8,7 @@
     box-shadow: none;
 }
 
-li pre {
+ul pre {
     width: 100% !important;
 }
 
@@ -28,6 +28,7 @@ table.summary tbody td {
     font-size: 1.5rem;
 }
 
-.fragment.small {
+.fragment.small, p.small {
     font-size: 1.5rem;
 }
+

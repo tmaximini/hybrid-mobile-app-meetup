@@ -13,18 +13,16 @@
     <li class="fragment">
     tasks: .src(), .pipe(), .dest()
     </li>
-
-    <li class="fragment">
-        <pre>
-        <code class="javascript">
-        // general pattern
-        gulp.task('scripts', function() {
-            gulp.src('app/scripts/**/*.js')
-                .pipe(anyGulpPlugin())
-                .pipe(gulp.dest('dist/scripts'))
-                .on('error', errorHandlerFunc);
-        });
-        </code></pre>
-    </li>
-
+    <pre class="fragment">
+<code class="javascript">
+// general pattern
+gulp.task('scripts', function() {
+    gulp.src('app/scripts/**/*.js')
+        .pipe(anyGulpPlugin())
+        .pipe(gulp.dest('dist/scripts'))
+        .on('error', errorHandlerFunc);
+});
+</code></pre>
 </ul>
+
+
